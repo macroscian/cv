@@ -1,0 +1,36 @@
+---
+name: Gavin Kelly
+address: "Bioinformatics and Biostatistics,\\tabularnewline Francis Crick Institute, London UK."
+email: "gavin.kelly@crick.ac.uk"
+github: macroscian
+date: "`r format(Sys.Date(), '%B %Y')`"
+headcolor: "000088"
+csl: numeric-apa-cv.csl
+output: vitae::hyndman
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  cache = FALSE
+)
+library(tidyverse)
+library(vitae)
+
+# Update list of R packages I've coauthored
+
+
+```
+
+# Education and qualifications
+
+```{r degrees, results='asis'}
+tribble(
+    ~Degree, ~Subject, ~Institution, ~Year,
+    "B.Sc.(Hons)", "University of Melbourne", 1988,
+    "Ph.D.", "University of Melbourne", 1992,
+    "A.Stat.", "Statistical Society of Australia", 2000
+  ) %>%
+  baretable()
